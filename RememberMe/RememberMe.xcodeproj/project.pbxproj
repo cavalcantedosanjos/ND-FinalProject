@@ -7,26 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CFA6E4661E948ADA00341C8D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA6E4591E948ADA00341C8D /* AppDelegate.swift */; };
-		CFA6E4671E948ADA00341C8D /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CFA6E45A1E948ADA00341C8D /* Info.plist */; };
-		CFA6E4681E948ADA00341C8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFA6E45E1E948ADA00341C8D /* Assets.xcassets */; };
-		CFA6E4691E948ADA00341C8D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFA6E45F1E948ADA00341C8D /* LaunchScreen.storyboard */; };
-		CFA6E46A1E948ADA00341C8D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFA6E4611E948ADA00341C8D /* Main.storyboard */; };
-		CFA6E46B1E948ADA00341C8D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA6E4651E948ADA00341C8D /* ViewController.swift */; };
+		CF2D63841E959D370016E975 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2D63781E959D370016E975 /* AppDelegate.swift */; };
+		CF2D63861E959D370016E975 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF2D637D1E959D370016E975 /* Assets.xcassets */; };
+		CF2D63871E959D370016E975 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF2D637E1E959D370016E975 /* LaunchScreen.storyboard */; };
+		CF2D63881E959D370016E975 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF2D63801E959D370016E975 /* Main.storyboard */; };
+		CF2D638A1E959E430016E975 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CF2D63891E959E430016E975 /* Info.plist */; };
+		CF2D638C1E95AA300016E975 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2D638B1E95AA300016E975 /* RegisterViewController.swift */; };
+		CF2D638E1E95AA880016E975 /* ReminderTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2D638D1E95AA880016E975 /* ReminderTableViewController.swift */; };
+		CF2D63911E95AAC00016E975 /* ReminderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2D63901E95AAC00016E975 /* ReminderTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CFA6E4431E948A7000341C8D /* FinancialRecord.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinancialRecord.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		CFA6E4591E948ADA00341C8D /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CFA6E45A1E948ADA00341C8D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CFA6E45E1E948ADA00341C8D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		CFA6E4601E948ADA00341C8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		CFA6E4621E948ADA00341C8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		CFA6E4651E948ADA00341C8D /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CF2D63621E959D1E0016E975 /* RememberMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RememberMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF2D63781E959D370016E975 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CF2D637D1E959D370016E975 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CF2D637F1E959D370016E975 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CF2D63811E959D370016E975 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CF2D63891E959E430016E975 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF2D638B1E95AA300016E975 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		CF2D638D1E95AA880016E975 /* ReminderTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReminderTableViewController.swift; sourceTree = "<group>"; };
+		CF2D63901E95AAC00016E975 /* ReminderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReminderTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		CFA6E4401E948A6F00341C8D /* Frameworks */ = {
+		CF2D635F1E959D1D0016E975 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -36,121 +40,131 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		CFA6E43A1E948A6F00341C8D = {
+		CF2D63591E959D1D0016E975 = {
 			isa = PBXGroup;
 			children = (
-				CFA6E4451E948A7000341C8D /* FinancialRecord */,
-				CFA6E4441E948A7000341C8D /* Products */,
+				CF2D63641E959D1E0016E975 /* RememberMe */,
+				CF2D63631E959D1E0016E975 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		CFA6E4441E948A7000341C8D /* Products */ = {
+		CF2D63631E959D1E0016E975 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CFA6E4431E948A7000341C8D /* FinancialRecord.app */,
+				CF2D63621E959D1E0016E975 /* RememberMe.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		CFA6E4451E948A7000341C8D /* FinancialRecord */ = {
+		CF2D63641E959D1E0016E975 /* RememberMe */ = {
 			isa = PBXGroup;
 			children = (
-				CFA6E4581E948ADA00341C8D /* Application */,
-				CFA6E45B1E948ADA00341C8D /* Convenient */,
-				CFA6E45C1E948ADA00341C8D /* Model */,
-				CFA6E45D1E948ADA00341C8D /* Resources */,
-				CFA6E4631E948ADA00341C8D /* Services */,
-				CFA6E4641E948ADA00341C8D /* ViewControllers */,
+				CF2D63771E959D370016E975 /* Application */,
+				CF2D637A1E959D370016E975 /* Convenient */,
+				CF2D637B1E959D370016E975 /* Model */,
+				CF2D637C1E959D370016E975 /* Resources */,
+				CF2D63821E959D370016E975 /* Services */,
+				CF2D63831E959D370016E975 /* ViewControllers */,
 			);
-			path = FinancialRecord;
+			path = RememberMe;
 			sourceTree = "<group>";
 		};
-		CFA6E4581E948ADA00341C8D /* Application */ = {
+		CF2D63771E959D370016E975 /* Application */ = {
 			isa = PBXGroup;
 			children = (
-				CFA6E4591E948ADA00341C8D /* AppDelegate.swift */,
-				CFA6E45A1E948ADA00341C8D /* Info.plist */,
+				CF2D63891E959E430016E975 /* Info.plist */,
+				CF2D63781E959D370016E975 /* AppDelegate.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
 		};
-		CFA6E45B1E948ADA00341C8D /* Convenient */ = {
+		CF2D637A1E959D370016E975 /* Convenient */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Convenient;
 			sourceTree = "<group>";
 		};
-		CFA6E45C1E948ADA00341C8D /* Model */ = {
+		CF2D637B1E959D370016E975 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		CFA6E45D1E948ADA00341C8D /* Resources */ = {
+		CF2D637C1E959D370016E975 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				CFA6E45E1E948ADA00341C8D /* Assets.xcassets */,
-				CFA6E45F1E948ADA00341C8D /* LaunchScreen.storyboard */,
-				CFA6E4611E948ADA00341C8D /* Main.storyboard */,
+				CF2D637D1E959D370016E975 /* Assets.xcassets */,
+				CF2D637E1E959D370016E975 /* LaunchScreen.storyboard */,
+				CF2D63801E959D370016E975 /* Main.storyboard */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		CFA6E4631E948ADA00341C8D /* Services */ = {
+		CF2D63821E959D370016E975 /* Services */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Services;
 			sourceTree = "<group>";
 		};
-		CFA6E4641E948ADA00341C8D /* ViewControllers */ = {
+		CF2D63831E959D370016E975 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				CFA6E4651E948ADA00341C8D /* ViewController.swift */,
+				CF2D638F1E95AAB10016E975 /* Cell */,
+				CF2D638B1E95AA300016E975 /* RegisterViewController.swift */,
+				CF2D638D1E95AA880016E975 /* ReminderTableViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		CF2D638F1E95AAB10016E975 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				CF2D63901E95AAC00016E975 /* ReminderTableViewCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CFA6E4421E948A6F00341C8D /* FinancialRecord */ = {
+		CF2D63611E959D1D0016E975 /* RememberMe */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CFA6E4551E948A7000341C8D /* Build configuration list for PBXNativeTarget "FinancialRecord" */;
+			buildConfigurationList = CF2D63741E959D1E0016E975 /* Build configuration list for PBXNativeTarget "RememberMe" */;
 			buildPhases = (
-				CFA6E43F1E948A6F00341C8D /* Sources */,
-				CFA6E4401E948A6F00341C8D /* Frameworks */,
-				CFA6E4411E948A6F00341C8D /* Resources */,
+				CF2D635E1E959D1D0016E975 /* Sources */,
+				CF2D635F1E959D1D0016E975 /* Frameworks */,
+				CF2D63601E959D1D0016E975 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = FinancialRecord;
-			productName = FinancialRecord;
-			productReference = CFA6E4431E948A7000341C8D /* FinancialRecord.app */;
+			name = RememberMe;
+			productName = RememberMe;
+			productReference = CF2D63621E959D1E0016E975 /* RememberMe.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		CFA6E43B1E948A6F00341C8D /* Project object */ = {
+		CF2D635A1E959D1D0016E975 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Joao Anjos";
 				TargetAttributes = {
-					CFA6E4421E948A6F00341C8D = {
+					CF2D63611E959D1D0016E975 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = L3UFDP9UDD;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = CFA6E43E1E948A6F00341C8D /* Build configuration list for PBXProject "FinancialRecord" */;
+			buildConfigurationList = CF2D635D1E959D1D0016E975 /* Build configuration list for PBXProject "RememberMe" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -158,55 +172,57 @@
 				en,
 				Base,
 			);
-			mainGroup = CFA6E43A1E948A6F00341C8D;
-			productRefGroup = CFA6E4441E948A7000341C8D /* Products */;
+			mainGroup = CF2D63591E959D1D0016E975;
+			productRefGroup = CF2D63631E959D1E0016E975 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CFA6E4421E948A6F00341C8D /* FinancialRecord */,
+				CF2D63611E959D1D0016E975 /* RememberMe */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		CFA6E4411E948A6F00341C8D /* Resources */ = {
+		CF2D63601E959D1D0016E975 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CFA6E4691E948ADA00341C8D /* LaunchScreen.storyboard in Resources */,
-				CFA6E4681E948ADA00341C8D /* Assets.xcassets in Resources */,
-				CFA6E4671E948ADA00341C8D /* Info.plist in Resources */,
-				CFA6E46A1E948ADA00341C8D /* Main.storyboard in Resources */,
+				CF2D638A1E959E430016E975 /* Info.plist in Resources */,
+				CF2D63881E959D370016E975 /* Main.storyboard in Resources */,
+				CF2D63871E959D370016E975 /* LaunchScreen.storyboard in Resources */,
+				CF2D63861E959D370016E975 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		CFA6E43F1E948A6F00341C8D /* Sources */ = {
+		CF2D635E1E959D1D0016E975 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CFA6E46B1E948ADA00341C8D /* ViewController.swift in Sources */,
-				CFA6E4661E948ADA00341C8D /* AppDelegate.swift in Sources */,
+				CF2D63911E95AAC00016E975 /* ReminderTableViewCell.swift in Sources */,
+				CF2D63841E959D370016E975 /* AppDelegate.swift in Sources */,
+				CF2D638E1E95AA880016E975 /* ReminderTableViewController.swift in Sources */,
+				CF2D638C1E95AA300016E975 /* RegisterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		CFA6E45F1E948ADA00341C8D /* LaunchScreen.storyboard */ = {
+		CF2D637E1E959D370016E975 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				CFA6E4601E948ADA00341C8D /* Base */,
+				CF2D637F1E959D370016E975 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
-		CFA6E4611E948ADA00341C8D /* Main.storyboard */ = {
+		CF2D63801E959D370016E975 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				CFA6E4621E948ADA00341C8D /* Base */,
+				CF2D63811E959D370016E975 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -214,7 +230,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		CFA6E4531E948A7000341C8D /* Debug */ = {
+		CF2D63721E959D1E0016E975 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -264,7 +280,7 @@
 			};
 			name = Debug;
 		};
-		CFA6E4541E948A7000341C8D /* Release */ = {
+		CF2D63731E959D1E0016E975 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -307,27 +323,27 @@
 			};
 			name = Release;
 		};
-		CFA6E4561E948A7000341C8D /* Debug */ = {
+		CF2D63751E959D1E0016E975 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = L3UFDP9UDD;
-				INFOPLIST_FILE = "$(SRCROOT)/FinancialRecord/Application/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/RememberMe/Application/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.cavalcante.FinancialRecord;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cavalcante.RememberMe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
-		CFA6E4571E948A7000341C8D /* Release */ = {
+		CF2D63761E959D1E0016E975 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = L3UFDP9UDD;
-				INFOPLIST_FILE = "$(SRCROOT)/FinancialRecord/Application/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/RememberMe/Application/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.cavalcante.FinancialRecord;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cavalcante.RememberMe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -336,24 +352,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CFA6E43E1E948A6F00341C8D /* Build configuration list for PBXProject "FinancialRecord" */ = {
+		CF2D635D1E959D1D0016E975 /* Build configuration list for PBXProject "RememberMe" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CFA6E4531E948A7000341C8D /* Debug */,
-				CFA6E4541E948A7000341C8D /* Release */,
+				CF2D63721E959D1E0016E975 /* Debug */,
+				CF2D63731E959D1E0016E975 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CFA6E4551E948A7000341C8D /* Build configuration list for PBXNativeTarget "FinancialRecord" */ = {
+		CF2D63741E959D1E0016E975 /* Build configuration list for PBXNativeTarget "RememberMe" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CFA6E4561E948A7000341C8D /* Debug */,
-				CFA6E4571E948A7000341C8D /* Release */,
+				CF2D63751E959D1E0016E975 /* Debug */,
+				CF2D63761E959D1E0016E975 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = CFA6E43B1E948A6F00341C8D /* Project object */;
+	rootObject = CF2D635A1E959D1D0016E975 /* Project object */;
 }

@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:FinancialRecord.xcodeproj">
+      location = "self:RememberMe.xcodeproj">
    </FileRef>
 </Workspace>
