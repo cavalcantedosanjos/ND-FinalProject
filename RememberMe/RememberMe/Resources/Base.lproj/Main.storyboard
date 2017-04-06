@@ -190,9 +190,21 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Remember Me" id="nbh-Hn-8yp">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="I9x-Xc-QdF"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="mne-9L-w81"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="I9x-Xc-QdF">
+                            <connections>
+                                <action selector="cancelButton_Clicked:" destination="GJc-tr-6gU" id="ov5-qF-h7C"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="mne-9L-w81">
+                            <connections>
+                                <action selector="doneButton_Clicked:" destination="GJc-tr-6gU" id="V1q-4a-ME8"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="reminderDate" destination="mtb-Le-Mjy" id="j7o-pR-bTW"/>
+                        <outlet property="reminderTextField" destination="NHY-22-1rz" id="LrD-S8-TSY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fMq-7c-mxi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

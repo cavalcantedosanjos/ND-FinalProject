@@ -15,6 +15,7 @@
 		CF2D638C1E95AA300016E975 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2D638B1E95AA300016E975 /* RegisterViewController.swift */; };
 		CF2D638E1E95AA880016E975 /* ReminderTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2D638D1E95AA880016E975 /* ReminderTableViewController.swift */; };
 		CF2D63911E95AAC00016E975 /* ReminderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2D63901E95AAC00016E975 /* ReminderTableViewCell.swift */; };
+		CF2D63931E95CF380016E975 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2D63921E95CF380016E975 /* UIViewControllerExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		CF2D638B1E95AA300016E975 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		CF2D638D1E95AA880016E975 /* ReminderTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReminderTableViewController.swift; sourceTree = "<group>"; };
 		CF2D63901E95AAC00016E975 /* ReminderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReminderTableViewCell.swift; sourceTree = "<group>"; };
+		CF2D63921E95CF380016E975 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 		CF2D637A1E959D370016E975 /* Convenient */ = {
 			isa = PBXGroup;
 			children = (
+				CF2D63921E95CF380016E975 /* UIViewControllerExtension.swift */,
 			);
 			path = Convenient;
 			sourceTree = "<group>";
@@ -202,6 +205,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF2D63911E95AAC00016E975 /* ReminderTableViewCell.swift in Sources */,
+				CF2D63931E95CF380016E975 /* UIViewControllerExtension.swift in Sources */,
 				CF2D63841E959D370016E975 /* AppDelegate.swift in Sources */,
 				CF2D638E1E95AA880016E975 /* ReminderTableViewController.swift in Sources */,
 				CF2D638C1E95AA300016E975 /* RegisterViewController.swift in Sources */,

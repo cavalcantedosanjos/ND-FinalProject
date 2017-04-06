@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import UserNotifications
 
 class ReminderTableViewController: UITableViewController {
 
@@ -32,7 +33,9 @@ class ReminderTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
            print("delete")
+             //let center = UNUserNotificationCenter.current()
            // tableView.deleteRows(at: [indexPath], with: .fade)
+                    //center.removePendingNotificationRequests(withIdentifiers: ["teste"])
         }
     }
 

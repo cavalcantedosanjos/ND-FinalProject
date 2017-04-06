@@ -10,31 +10,67 @@ import UIKit
 import UserNotifications
 
 class RegisterViewController: UIViewController {
-
+    
     // MARK: - Properties
+    @IBOutlet weak var reminderTextField: UITextField!
+    @IBOutlet weak var reminderDate: UIDatePicker!
+    
+    let currentDate = Date()
     
     // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let content = UNMutableNotificationContent()
-        content.title = NSString.localizedUserNotificationString(forKey: " vamos cambada", arguments: nil)
-        content.body = NSString.localizedUserNotificationString(forKey: " ", arguments: nil)
-        content.sound = UNNotificationSound.default()
-        content.badge = UIApplication.shared.applicationIconBadgeNumber as NSNumber?;
-        content.categoryIdentifier = "com.cavalcante.RememberMe"
-        // Deliver the notification in five seconds.
-        let trigger = UNTimeIntervalNotificationTrigger.init(timeInterval: 60.0, repeats: true)
-        let request = UNNotificationRequest.init(identifier: "teste", content: content, trigger: trigger)
-        
-        // Schedule the notification.
-        let center = UNUserNotificationCenter.current()
-        center.add(request)
-        //center.removePendingNotificationRequests(withIdentifiers: ["teste"])
-
-
+        reminderDate.minimumDate = currentDate
+        reminderDate.date = currentDate
     }
     
+    // MARK: - Actions
     
+    @IBAction func doneButton_Clicked(_ sender: UIBarButtonItem) {
+        
+        guard let title = reminderTextField.text, !title.isEmpty  else {
+            self.showMessage(message: "Required To-do.", title: "Invalid Field!")
+            return
+        }
+        
+        guard (reminderDate.date.timeIntervalSinceNow > 0) else {
+            self.showMessage(message: "Invalid Date", title: "Invalid Field!")
+            return
+        }
+        
+        registerReminder(text: title, date: reminderDate.date)
+        
+    }
+    
+    @IBAction func cancelButton_Clicked(_ sender: UIBarButtonItem) {
+        clearForm()
+    }
+    
+    // MARK: - Misc
+    
+    func registerReminder(text: String, date: Date){
+        
+        let content = UNMutableNotificationContent()
+        content.title = NSString.localizedUserNotificationString(forKey: text, arguments: nil)
+        content.body = NSString.localizedUserNotificationString(forKey: date.description(with: Locale.current), arguments: nil)
+        content.sound = UNNotificationSound.default()
+        content.categoryIdentifier = "com.cavalcante.RememberMe"
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: date.timeIntervalSinceNow, repeats: false)
+        let request = UNNotificationRequest(identifier: "teste", content: content, trigger: trigger)
+        
+        let center = UNUserNotificationCenter.current()
+        center.add(request)
+        
+        
+        self.showMessage(message: "Reminder created with success!", title: "Success")
+        clearForm()
+        
+    }
 
+    func clearForm(){
+        reminderTextField.text = ""
+        reminderDate.date = currentDate
+    }
+    
 }
