@@ -11,5 +11,12 @@ import UIKit
 class ReminderTableViewCell: UITableViewCell {
 
 
+    @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var titleLabel: UILabel!
+
+    func setup(reminder: Reminder) {
+        titleLabel.text = reminder.text
+        dateLabel.text = reminder.dateTime
+    }
 
 }

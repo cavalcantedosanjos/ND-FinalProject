@@ -42,7 +42,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="65"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Tfi-JF-If2" id="7N3-HP-jFu">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To-do" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j2C-lP-5Kg">
@@ -65,6 +65,10 @@
                                         <constraint firstItem="j2C-lP-5Kg" firstAttribute="top" secondItem="7N3-HP-jFu" secondAttribute="top" constant="8" id="y1J-XY-IDB"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="dateLabel" destination="UUk-9z-y2V" id="xyI-oY-2Ym"/>
+                                    <outlet property="titleLabel" destination="j2C-lP-5Kg" id="3Ez-eA-muL"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -83,7 +87,7 @@
             <objects>
                 <navigationController id="RiA-2T-BsL" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="3oj-nw-Hh7"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="yHk-q9-fQL">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="yHk-q9-fQL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.85262101889999997" green="0.42218321559999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -106,7 +110,7 @@
             <objects>
                 <navigationController id="G3z-8E-98R" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="uWv-AP-FQ2"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="x1Q-K4-8es">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="x1Q-K4-8es">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.85262101889999997" green="0.42218321559999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>

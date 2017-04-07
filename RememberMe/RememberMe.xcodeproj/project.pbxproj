@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0FE3A846F0E32A14FDCCE82E /* Pods_RememberMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E4F0BBBA88C55A82E834971 /* Pods_RememberMe.framework */; };
 		CF2D63841E959D370016E975 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2D63781E959D370016E975 /* AppDelegate.swift */; };
 		CF2D63861E959D370016E975 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF2D637D1E959D370016E975 /* Assets.xcassets */; };
 		CF2D63871E959D370016E975 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF2D637E1E959D370016E975 /* LaunchScreen.storyboard */; };
@@ -15,10 +16,15 @@
 		CF2D638C1E95AA300016E975 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2D638B1E95AA300016E975 /* RegisterViewController.swift */; };
 		CF2D638E1E95AA880016E975 /* ReminderTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2D638D1E95AA880016E975 /* ReminderTableViewController.swift */; };
 		CF2D63911E95AAC00016E975 /* ReminderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2D63901E95AAC00016E975 /* ReminderTableViewCell.swift */; };
-		CF2D63931E95CF380016E975 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2D63921E95CF380016E975 /* UIViewControllerExtension.swift */; };
+		CF55932E1E96FB85008C769A /* Reminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF55932D1E96FB85008C769A /* Reminder.swift */; };
+		CF5593301E96FE5A008C769A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CF55932F1E96FE5A008C769A /* GoogleService-Info.plist */; };
+		CF5593321E970FC6008C769A /* FirebaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5593311E970FC6008C769A /* FirebaseService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B5E4F0DE0417BA52F0EB021 /* Pods-RememberMe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RememberMe.release.xcconfig"; path = "Pods/Target Support Files/Pods-RememberMe/Pods-RememberMe.release.xcconfig"; sourceTree = "<group>"; };
+		628CAC191828A8FE3B4B9A6B /* Pods-RememberMe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RememberMe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RememberMe/Pods-RememberMe.debug.xcconfig"; sourceTree = "<group>"; };
+		8E4F0BBBA88C55A82E834971 /* Pods_RememberMe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RememberMe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF2D63621E959D1E0016E975 /* RememberMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RememberMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF2D63781E959D370016E975 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CF2D637D1E959D370016E975 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -28,7 +34,9 @@
 		CF2D638B1E95AA300016E975 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		CF2D638D1E95AA880016E975 /* ReminderTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReminderTableViewController.swift; sourceTree = "<group>"; };
 		CF2D63901E95AAC00016E975 /* ReminderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReminderTableViewCell.swift; sourceTree = "<group>"; };
-		CF2D63921E95CF380016E975 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		CF55932D1E96FB85008C769A /* Reminder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reminder.swift; sourceTree = "<group>"; };
+		CF55932F1E96FE5A008C769A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CF5593311E970FC6008C769A /* FirebaseService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,17 +44,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FE3A846F0E32A14FDCCE82E /* Pods_RememberMe.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6F958525062450A96F9C2607 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				628CAC191828A8FE3B4B9A6B /* Pods-RememberMe.debug.xcconfig */,
+				3B5E4F0DE0417BA52F0EB021 /* Pods-RememberMe.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B31EED4D68F6E0892F1DAB67 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8E4F0BBBA88C55A82E834971 /* Pods_RememberMe.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CF2D63591E959D1D0016E975 = {
 			isa = PBXGroup;
 			children = (
 				CF2D63641E959D1E0016E975 /* RememberMe */,
 				CF2D63631E959D1E0016E975 /* Products */,
+				6F958525062450A96F9C2607 /* Pods */,
+				B31EED4D68F6E0892F1DAB67 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,7 +90,6 @@
 			isa = PBXGroup;
 			children = (
 				CF2D63771E959D370016E975 /* Application */,
-				CF2D637A1E959D370016E975 /* Convenient */,
 				CF2D637B1E959D370016E975 /* Model */,
 				CF2D637C1E959D370016E975 /* Resources */,
 				CF2D63821E959D370016E975 /* Services */,
@@ -75,22 +102,16 @@
 			isa = PBXGroup;
 			children = (
 				CF2D63891E959E430016E975 /* Info.plist */,
+				CF55932F1E96FE5A008C769A /* GoogleService-Info.plist */,
 				CF2D63781E959D370016E975 /* AppDelegate.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
 		};
-		CF2D637A1E959D370016E975 /* Convenient */ = {
-			isa = PBXGroup;
-			children = (
-				CF2D63921E95CF380016E975 /* UIViewControllerExtension.swift */,
-			);
-			path = Convenient;
-			sourceTree = "<group>";
-		};
 		CF2D637B1E959D370016E975 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				CF55932D1E96FB85008C769A /* Reminder.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -108,6 +129,7 @@
 		CF2D63821E959D370016E975 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				CF5593311E970FC6008C769A /* FirebaseService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -137,9 +159,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CF2D63741E959D1E0016E975 /* Build configuration list for PBXNativeTarget "RememberMe" */;
 			buildPhases = (
+				4914475A8C0A19199B60672B /* [CP] Check Pods Manifest.lock */,
 				CF2D635E1E959D1D0016E975 /* Sources */,
 				CF2D635F1E959D1D0016E975 /* Frameworks */,
 				CF2D63601E959D1D0016E975 /* Resources */,
+				540036A3EEF8FA9FA0973E19 /* [CP] Embed Pods Frameworks */,
+				0AA5CF169D98EFBD3693708C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -192,6 +217,7 @@
 			files = (
 				CF2D638A1E959E430016E975 /* Info.plist in Resources */,
 				CF2D63881E959D370016E975 /* Main.storyboard in Resources */,
+				CF5593301E96FE5A008C769A /* GoogleService-Info.plist in Resources */,
 				CF2D63871E959D370016E975 /* LaunchScreen.storyboard in Resources */,
 				CF2D63861E959D370016E975 /* Assets.xcassets in Resources */,
 			);
@@ -199,14 +225,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0AA5CF169D98EFBD3693708C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RememberMe/Pods-RememberMe-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4914475A8C0A19199B60672B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		540036A3EEF8FA9FA0973E19 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RememberMe/Pods-RememberMe-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CF2D635E1E959D1D0016E975 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				CF2D63911E95AAC00016E975 /* ReminderTableViewCell.swift in Sources */,
-				CF2D63931E95CF380016E975 /* UIViewControllerExtension.swift in Sources */,
 				CF2D63841E959D370016E975 /* AppDelegate.swift in Sources */,
+				CF55932E1E96FB85008C769A /* Reminder.swift in Sources */,
+				CF5593321E970FC6008C769A /* FirebaseService.swift in Sources */,
 				CF2D638E1E95AA880016E975 /* ReminderTableViewController.swift in Sources */,
 				CF2D638C1E95AA300016E975 /* RegisterViewController.swift in Sources */,
 			);
@@ -329,6 +404,7 @@
 		};
 		CF2D63751E959D1E0016E975 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 628CAC191828A8FE3B4B9A6B /* Pods-RememberMe.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = L3UFDP9UDD;
@@ -342,6 +418,7 @@
 		};
 		CF2D63761E959D1E0016E975 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B5E4F0DE0417BA52F0EB021 /* Pods-RememberMe.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = L3UFDP9UDD;
@@ -372,6 +449,7 @@
 				CF2D63761E959D1E0016E975 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
