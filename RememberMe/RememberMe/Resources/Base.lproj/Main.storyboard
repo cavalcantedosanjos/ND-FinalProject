@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="dJU-9k-Zm8">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="4j4-eB-w16">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -9,25 +9,28 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Tab Bar Controller-->
-        <scene sceneID="AV6-ft-P0v">
+        <!--Reminder-->
+        <scene sceneID="3DI-oY-A29">
             <objects>
-                <tabBarController id="dJU-9k-Zm8" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="UKb-zP-kn4">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                <navigationController id="D0y-B1-d6a" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Reminder" image="ic_list" id="H6c-x1-4Co"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="EFh-lj-KJj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" red="0.85262101889999997" green="0.42218321559999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <color key="barTintColor" red="0.85262101889999997" green="0.42218321559999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                    </tabBar>
+                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
                     <connections>
-                        <segue destination="G3z-8E-98R" kind="relationship" relationship="viewControllers" id="nJM-tB-Tpi"/>
-                        <segue destination="RiA-2T-BsL" kind="relationship" relationship="viewControllers" id="LOL-1R-2gp"/>
+                        <segue destination="qjP-Z2-l7x" kind="relationship" relationship="rootViewController" id="EzI-UW-L1v"/>
                     </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="wNd-Iq-Sb2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M3I-m3-sMw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="710" y="281"/>
+            <point key="canvasLocation" x="2713" y="625"/>
         </scene>
         <!--Remember Me-->
         <scene sceneID="DdB-Pg-Q91">
@@ -37,6 +40,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="separatorColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" rowHeight="65" id="Tfi-JF-If2" customClass="ReminderTableViewCell" customModule="RememberMe" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="65"/>
@@ -80,63 +84,40 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NQo-tw-Edb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2700" y="624.73763118440786"/>
+            <point key="canvasLocation" x="3639" y="625"/>
         </scene>
-        <!--Item-->
-        <scene sceneID="Z2p-0h-mt0">
+        <!--Register-->
+        <scene sceneID="SMu-4m-ltQ">
             <objects>
-                <navigationController id="RiA-2T-BsL" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="3oj-nw-Hh7"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="yHk-q9-fQL">
+                <navigationController id="ySY-7E-VFE" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Register" image="ic_calendar" id="mbM-K1-EoK"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="8qc-Qp-agE">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" red="0.85262101889999997" green="0.42218321559999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <color key="barTintColor" red="0.85262101889999997" green="0.42218321559999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
-                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </textAttributes>
                     </navigationBar>
                     <connections>
-                        <segue destination="qjP-Z2-l7x" kind="relationship" relationship="rootViewController" id="4cH-Mo-Tpa"/>
+                        <segue destination="cBA-5U-Ewv" kind="relationship" relationship="rootViewController" id="M6t-XT-ifQ"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="KUB-xb-ASD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uX8-rm-HHJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1817" y="625"/>
+            <point key="canvasLocation" x="2712.8000000000002" y="-145.27736131934034"/>
         </scene>
-        <!--Item-->
-        <scene sceneID="sSi-U8-qpJ">
+        <!--Register View Controller-->
+        <scene sceneID="xX5-dJ-fgR">
             <objects>
-                <navigationController id="G3z-8E-98R" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="uWv-AP-FQ2"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="x1Q-K4-8es">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" red="0.85262101889999997" green="0.42218321559999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <color key="barTintColor" red="0.85262101889999997" green="0.42218321559999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                        <textAttributes key="titleTextAttributes">
-                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        </textAttributes>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="GJc-tr-6gU" kind="relationship" relationship="rootViewController" id="hn3-Zk-Tq4"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="UNt-x1-4Nt" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1817" y="-145"/>
-        </scene>
-        <!--Remember Me-->
-        <scene sceneID="dIn-DC-17F">
-            <objects>
-                <viewController id="GJc-tr-6gU" customClass="RegisterViewController" customModule="RememberMe" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="cBA-5U-Ewv" customClass="RegisterViewController" customModule="RememberMe" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="vQq-c9-7mj"/>
-                        <viewControllerLayoutGuide type="bottom" id="hpr-q8-tDm"/>
+                        <viewControllerLayoutGuide type="top" id="HBH-KB-nkK"/>
+                        <viewControllerLayoutGuide type="bottom" id="FN3-qL-8uD"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="dVm-tP-CRo">
+                    <view key="view" contentMode="scaleToFill" id="18b-vM-ddz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -186,33 +167,61 @@
                                 </constraints>
                             </view>
                         </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="WPt-nH-fwA" firstAttribute="top" secondItem="vQq-c9-7mj" secondAttribute="bottom" id="AaY-aU-1Ki"/>
-                            <constraint firstItem="WPt-nH-fwA" firstAttribute="leading" secondItem="dVm-tP-CRo" secondAttribute="leading" id="Bll-wi-3zh"/>
-                            <constraint firstItem="hpr-q8-tDm" firstAttribute="top" secondItem="WPt-nH-fwA" secondAttribute="bottom" id="fTf-db-6iJ"/>
-                            <constraint firstAttribute="trailing" secondItem="WPt-nH-fwA" secondAttribute="trailing" id="pzC-O6-rcU"/>
+                            <constraint firstAttribute="trailing" secondItem="WPt-nH-fwA" secondAttribute="trailing" id="3de-lA-b5k"/>
+                            <constraint firstAttribute="trailing" secondItem="WPt-nH-fwA" secondAttribute="trailing" id="40D-VP-eRx"/>
+                            <constraint firstItem="WPt-nH-fwA" firstAttribute="leading" secondItem="18b-vM-ddz" secondAttribute="leading" id="CpM-RB-Fhj"/>
+                            <constraint firstItem="FN3-qL-8uD" firstAttribute="top" secondItem="WPt-nH-fwA" secondAttribute="bottom" id="E6d-HZ-bcD"/>
+                            <constraint firstItem="WPt-nH-fwA" firstAttribute="leading" secondItem="18b-vM-ddz" secondAttribute="leading" id="TT6-W3-eOD"/>
+                            <constraint firstItem="WPt-nH-fwA" firstAttribute="top" secondItem="HBH-KB-nkK" secondAttribute="bottom" id="dnz-sD-1sR"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Remember Me" id="nbh-Hn-8yp">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="I9x-Xc-QdF">
+                    <navigationItem key="navigationItem" id="aCs-WK-upc">
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="FhU-Ew-8kY">
                             <connections>
-                                <action selector="cancelButton_Clicked:" destination="GJc-tr-6gU" id="ov5-qF-h7C"/>
+                                <action selector="cancelButton_Clicked:" destination="cBA-5U-Ewv" id="wA2-oe-c3i"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="mne-9L-w81">
+                        <barButtonItem key="rightBarButtonItem" title="Done" id="zZR-fH-76H">
                             <connections>
-                                <action selector="doneButton_Clicked:" destination="GJc-tr-6gU" id="V1q-4a-ME8"/>
+                                <action selector="doneButton_Clicked:" destination="cBA-5U-Ewv" id="Ewu-UQ-lMW"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="reminderDate" destination="mtb-Le-Mjy" id="j7o-pR-bTW"/>
-                        <outlet property="reminderTextField" destination="NHY-22-1rz" id="LrD-S8-TSY"/>
+                        <outlet property="reminderDate" destination="mtb-Le-Mjy" id="bwA-XQ-Zlh"/>
+                        <outlet property="reminderTextField" destination="NHY-22-1rz" id="i92-b1-x3k"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fMq-7c-mxi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iaN-Ja-cWl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2700" y="-145"/>
+            <point key="canvasLocation" x="3637.5999999999999" y="-145.27736131934034"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Wng-uz-Aqb">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="4j4-eB-w16" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="l57-1I-QjZ">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="ySY-7E-VFE" kind="relationship" relationship="viewControllers" id="MQD-q2-vMf"/>
+                        <segue destination="D0y-B1-d6a" kind="relationship" relationship="viewControllers" id="20N-wJ-7rZ"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YTC-4l-Xpk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1738" y="183"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ic_calendar" width="21" height="21"/>
+        <image name="ic_list" width="21" height="21"/>
+    </resources>
 </document>

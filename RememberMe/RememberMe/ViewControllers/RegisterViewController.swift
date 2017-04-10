@@ -55,9 +55,12 @@ class RegisterViewController: UIViewController {
         
         let key = FirebaseService.shared().deviceRef.childByAutoId().key
         
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "EEE, MMM dd yyyy hh:mm"
+        
         let content = UNMutableNotificationContent()
         content.title = NSString.localizedUserNotificationString(forKey: text, arguments: nil)
-        content.body = NSString.localizedUserNotificationString(forKey: date.description(with: Locale.current), arguments: nil)
+        content.body = NSString.localizedUserNotificationString(forKey: dateFormatter.string(from: date), arguments: nil)
         content.sound = UNNotificationSound.default()
         content.categoryIdentifier = "com.cavalcante.RememberMe"
         let trigger = UNTimeIntervalNotificationTrigger(timeInterval: date.timeIntervalSinceNow, repeats: false)

@@ -36,7 +36,7 @@ class ReminderTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             
-            let alert = UIAlertController(title: "Alert!", message: "Deseja mesmo deletar?", preferredStyle: .alert)
+            let alert = UIAlertController(title: "Alert!", message: "Are you sure you want to delete?", preferredStyle: .alert)
             
             alert.addAction(UIAlertAction(title: "Yes", style: .default, handler: { (action) in
                 self.deleteItem(indexItem: indexPath.row)

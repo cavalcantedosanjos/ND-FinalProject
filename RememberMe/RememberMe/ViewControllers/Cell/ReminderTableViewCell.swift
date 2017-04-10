@@ -16,7 +16,15 @@ class ReminderTableViewCell: UITableViewCell {
 
     func setup(reminder: Reminder) {
         titleLabel.text = reminder.text
-        dateLabel.text = reminder.dateTime
+        
+        //Format Date
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ssZZZ"
+        
+        let dateObj = dateFormatter.date(from: reminder.dateTime)
+        dateFormatter.dateFormat = "EEE, MMM dd yyyy hh:mm"
+        
+        dateLabel.text = dateFormatter.string(from: dateObj!)
     }
 
 }
