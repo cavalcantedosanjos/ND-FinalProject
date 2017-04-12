@@ -78,7 +78,7 @@ class RegisterViewController: UIViewController {
             self.showMessage(message: "Could not perform an operation at this time. Please try again later.", title: "Error")
         }, onCompleted: {
             HUD.hide()
-            clearForm()
+            self.clearForm()
         })
 
     }

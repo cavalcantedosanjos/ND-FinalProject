@@ -68,7 +68,6 @@ class ReminderTableViewController: UITableViewController {
         HUD.show(.progress)
         FirebaseService.shared().remove(ref: Reminder.saved[index].ref!, onSuccess: {
             self.showMessage(message: "Deleted successfully.", title: "Success")
-            Reminder.saved.remove(at: index)
             self.tableView.reloadData()
         }, onFailure: { (error) in
             self.showMessage(message: "Could not perform an operation at this time. Please try again later.", title: "Error")
