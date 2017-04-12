@@ -8,6 +8,7 @@
 
 import UIKit
 import UserNotifications
+import PKHUD
 
 class RegisterViewController: UIViewController {
     
@@ -21,10 +22,9 @@ class RegisterViewController: UIViewController {
     // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-    
+        
         reminderDate.minimumDate = currentDate
         reminderDate.date = currentDate
-        
     }
     
     // MARK: - Actions
@@ -69,14 +69,21 @@ class RegisterViewController: UIViewController {
         let center = UNUserNotificationCenter.current()
         center.add(request)
         
-        FirebaseService.shared().save(text: text, date: date, key: key)
         
-        self.showMessage(message: "Reminder created with success!", title: "Success")
+        HUD.show(.progress)
         
-        clearForm()
+        FirebaseService.shared().save(text: text, date: date, key: key, onSuccess: {
+            self.showMessage(message: "Reminder created with success!", title: "Success")
+        }, onFailure: { (error) in
+            self.showMessage(message: "Could not perform an operation at this time. Please try again later.", title: "Error")
+        }, onCompleted: {
+            HUD.hide()
+            clearForm()
+        })
+
     }
     
-  
+    
     func clearForm() {
         reminderTextField.text = ""
         reminderDate.date = currentDate

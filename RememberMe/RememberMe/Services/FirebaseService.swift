@@ -28,25 +28,64 @@ class FirebaseService {
         deviceRef = self.ref.child(deviceId.lowercased())
     }
     
-    
-    func save(text: String, date: Date, key: String){
+    func save(text: String, date: Date, key: String,
+              onSuccess: @escaping ()-> Void,
+              onFailure: @escaping(_ error: Error) -> Void,
+              onCompleted: @escaping ()-> Void){
+        
+        UIApplication.shared.isNetworkActivityIndicatorVisible = true
+        
         let itemRef = deviceRef.child(key)
         let item = Reminder(text: text, dateTime: "\(date)", key: key)
-        itemRef.setValue(item.toAnyObject())
+        
+        itemRef.setValue(item.toAnyObject()) { (error, databaseReference) in
+            UIApplication.shared.isNetworkActivityIndicatorVisible = true
+            
+            if error == nil {
+               onSuccess()
+            } else {
+                onFailure(error!)
+            }
+            
+             onCompleted()
+        }
+
     }
     
-    func load() {
+    func load(completed: @escaping ()-> Void) {
+        UIApplication.shared.isNetworkActivityIndicatorVisible = true
+        
         deviceRef.observe(.value, with: { snapshot in
             Reminder.saved.removeAll()
             for item in snapshot.children {
                 let item = Reminder(snapshot: item as! FIRDataSnapshot)
                  Reminder.saved.append(item)
             }
+            
+            UIApplication.shared.isNetworkActivityIndicatorVisible = false
+            completed()
         })
     }
     
-    func remove(ref: FIRDatabaseReference) {
-        ref.removeValue()
+    func remove(ref: FIRDatabaseReference,
+                onSuccess: @escaping ()-> Void,
+                onFailure: @escaping(_ error: Error) -> Void,
+                onCompleted: @escaping ()-> Void) {
+        
+        UIApplication.shared.isNetworkActivityIndicatorVisible = true
+        
+        ref.removeValue { (error, databaseReference) in
+            
+            UIApplication.shared.isNetworkActivityIndicatorVisible = false
+            
+            if error == nil {
+                onSuccess()
+            } else {
+                onFailure(error!)
+            }
+            
+            onCompleted()
+        }
     }
 
 }
