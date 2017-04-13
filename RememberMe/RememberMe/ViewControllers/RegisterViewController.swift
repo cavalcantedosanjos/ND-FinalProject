@@ -32,12 +32,12 @@ class RegisterViewController: UIViewController {
     @IBAction func doneButton_Clicked(_ sender: UIBarButtonItem) {
         
         guard let title = reminderTextField.text, !title.isEmpty  else {
-            self.showMessage(message: "Required To-do.", title: "Invalid Field!")
+            showMessage(message: "Required To-do.", title: "Invalid Field!")
             return
         }
         
         guard (reminderDate.date.timeIntervalSinceNow > 0) else {
-            self.showMessage(message: "Invalid Date", title: "Invalid Field!")
+            showMessage(message: "Invalid Date", title: "Invalid Field!")
             return
         }
         
@@ -53,7 +53,7 @@ class RegisterViewController: UIViewController {
     
     func registerReminder(text: String, date: Date){
         
-        let key = FirebaseService.shared().deviceRef.childByAutoId().key
+        let key = FirebaseService.shared.deviceRef.childByAutoId().key
         
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "EEE, MMM dd yyyy hh:mm"
@@ -72,7 +72,7 @@ class RegisterViewController: UIViewController {
         
         HUD.show(.progress)
         
-        FirebaseService.shared().save(text: text, date: date, key: key, onSuccess: {
+        FirebaseService.shared.save(text: text, date: date, key: key, onSuccess: {
             self.showMessage(message: "Reminder created with success!", title: "Success")
         }, onFailure: { (error) in
             self.showMessage(message: "Could not perform an operation at this time. Please try again later.", title: "Error")

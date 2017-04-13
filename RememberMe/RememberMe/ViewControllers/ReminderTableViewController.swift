@@ -17,7 +17,7 @@ class ReminderTableViewController: UITableViewController {
         super.viewDidAppear(animated)
         
         HUD.show(.progress)
-        FirebaseService.shared().load {
+        FirebaseService.shared.load {
             HUD.hide()
             self.tableView.reloadData()
         }
@@ -66,7 +66,7 @@ class ReminderTableViewController: UITableViewController {
         center.removePendingNotificationRequests(withIdentifiers: [Reminder.saved[index].key])
         
         HUD.show(.progress)
-        FirebaseService.shared().remove(ref: Reminder.saved[index].ref!, onSuccess: {
+        FirebaseService.shared.remove(ref: Reminder.saved[index].ref!, onSuccess: {
             self.showMessage(message: "Deleted successfully.", title: "Success")
             self.tableView.reloadData()
         }, onFailure: { (error) in

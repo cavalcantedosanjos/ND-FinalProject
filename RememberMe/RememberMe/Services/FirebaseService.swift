@@ -12,12 +12,7 @@ import Firebase
 class FirebaseService {
     
     // MARK: Shared Instance
-    class func shared() -> FirebaseService {
-        struct Singleton {
-            static var sharedInstance = FirebaseService()
-        }
-        return Singleton.sharedInstance
-    }
+    static let shared = FirebaseService()
     
     // MARK: - Properties
     private let ref = FIRDatabase.database().reference(withPath: "reminder-items")
